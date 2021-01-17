@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>我和我的2020 | Acmen</title><meta name="description" content="我和我的2020 长这么大，没有一年像2020这样，让人觉得特殊，却让人觉得如此难忘。  这一年（上）2019年年底，难得一个不用忙碌期末考试的期末，和舍友开心得相约明年再见，所有人都没想到，我们下一次的见面，竟是告别。2019年最后，我发了一个微博：挺希望2020的最后一个0是3的，当时的我已经厌倦了这样时间上的数字更替，毕竟对我来说2019真的是很悲伤的一年。对于2020，我并没有多少期待，即"><meta name="keywords" content="随笔"><meta name="author" content="Acmen"><meta name="copyright" content="Acmen"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://acmenwang.xyz/2020/12/31/good-bye-2020/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="我和我的2020"><meta property="og:url" content="https://acmenwang.xyz/2020/12/31/good-bye-2020/"><meta property="og:site_name" content="Acmen"><meta property="og:description" content="我和我的2020 长这么大，没有一年像2020这样，让人觉得特殊，却让人觉得如此难忘。  这一年（上）2019年年底，难得一个不用忙碌期末考试的期末，和舍友开心得相约明年再见，所有人都没想到，我们下一次的见面，竟是告别。2019年最后，我发了一个微博：挺希望2020的最后一个0是3的，当时的我已经厌倦了这样时间上的数字更替，毕竟对我来说2019真的是很悲伤的一年。对于2020，我并没有多少期待，即"><meta property="og:image" content="https://i.loli.net/2021/01/12/u7UpMJWk2VYzZmr.jpg"><meta property="article:published_time" content="2020-12-31T15:23:21.000Z"><meta property="article:modified_time" content="2021-01-17T09:20:11.575Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="prev" title="OOP" href="https://acmenwang.xyz/2021/01/01/OOP/"><link rel="next" title="221周赛" href="https://acmenwang.xyz/2020/12/27/221%E5%91%A8%E8%B5%9B/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true
+  }</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 4.2.1"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">25</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">9</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#我和我的2020"><span class="toc-number">1.</span> <span class="toc-text">我和我的2020</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#这一年（上）"><span class="toc-number">1.1.</span> <span class="toc-text">这一年（上）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#这一年（下）"><span class="toc-number">1.2.</span> <span class="toc-text">这一年（下）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Summary"><span class="toc-number">1.3.</span> <span class="toc-text">Summary</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#展望2021"><span class="toc-number">1.4.</span> <span class="toc-text">展望2021</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-number">1.5.</span> <span class="toc-text">后记</span></a></li></ol></li></ol></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://i.loli.net/2021/01/12/u7UpMJWk2VYzZmr.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">Acmen</a></span><span class="pull-right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">我和我的2020</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-12-31 23:23:21"><i class="far fa-calendar-alt fa-fw"></i> 发表于 2020-12-31</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2021-01-17 17:20:11"><i class="fas fa-history fa-fw"></i> 更新于 2021-01-17</span></time></div><div class="meta-secondline"> </div><div class="meta-thirdline"><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta__icon"></i><span>阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h1 id="我和我的2020"><a href="#我和我的2020" class="headerlink" title="我和我的2020"></a>我和我的2020</h1><blockquote>
+<p>长这么大，没有一年像2020这样，让人觉得特殊，却让人觉得如此难忘。</p>
+</blockquote>
+<h2 id="这一年（上）"><a href="#这一年（上）" class="headerlink" title="这一年（上）"></a>这一年（上）</h2><p>2019年年底，难得一个不用忙碌期末考试的期末，和舍友开心得相约明年再见，所有人都没想到，我们下一次的见面，竟是告别。2019年最后，我发了一个微博：<em>挺希望2020的最后一个0是3的</em>，当时的我已经厌倦了这样时间上的数字更替，毕竟对我来说2019真的是很悲伤的一年。对于2020，我并没有多少期待，即使我知道自己2020将会毕业，将会开启一段新的人生。直到2020的今天，我才知道，就是这样一个我并不期待的年份，竟是我这么多年来<strong>改变最大</strong>的一年。</p>
+<p>2020的开年是所有人都没想到的，在这之前，说起疫情，我可能只能联想到当时并没有深刻记忆的<strong>非典</strong>，但是这一次，我相信每个人都真真切切感受到了，亿万的中国人可能从未度过过这样一个特殊的春节，没有熙熙攘攘，没有火树银花，没有人声鼎沸，只有那一个个飞速上升的数字和电视新闻里一条又一条的报道。人们正常生活的秩序彻底被打破了，不能按时上班，只能躲在家里隔离，甚至去买个菜也只能去指定的地方，疫情最严重的时候，只要你下楼转悠，定会被赶上楼的。人是需要社交的，这样长时间的将人困到一个狭小的空间里，终日终夜只能与手机相伴，身体和心理难免出现问题。黑白颠倒的作息，飞速上涨的体重，成了我疫情期间的缩影，我胖到了140多斤，肉眼可见的肚子大了一圈。其次便是作息的混乱，导致皮肤很差，有一段时间甚至发现自己开始脱发。整个上半年，我的身体来到了最差的一段时间。</p>
+<p>并不像很多人在家悠闲的躺着，我的2020上半年是忙碌的。因为要毕业，我必须开始写自己的毕业论文，而且我参与了导师繁忙的项目，从大年初六开始，我几乎每一天都在写代码，都在完成项目的进度 ，开会最多的时候，一天会开3次或者四次，有时候开得晚了，11点以后，凌晨都是司空见惯。其次由于自己提前选课，在写论文之余，还要兼顾网课，虽然都很水，但是难免需要花费一些时间。因为在家和父母相处得太久，难免就会发生很多争吵，他们吐槽我每天只会趴在桌子上<strong>玩</strong>电脑，其实只有我才知道，我也并不想这样。日子每天几乎都在重复，如此重复的日子，会让人觉得时间很快。长时间的禁闭，让我觉得能够出去一次就很开心，超级月亮的那天，我和妹妹拿着我的手机，开心的拍了个不停。虽然我很想出去，但是老爸却很感谢这次疫情，因为他知道，可能以后再也没有这么长的时间和自己的儿子相处了。</p>
+<p>说说疫情自己期间发生的一些大事吧，我最爱的球星<strong>科比</strong>在一场飞机事故中去世了，我很难接受这样的事实，因为在很长一段时间里，他是我的精神支柱，因为他特别契合我好胜的性格，<em>总有一个人要赢，为什么不能是我呢？</em>这是我最喜欢的一句。因为打卡任务的出现，我真的把刷<em>leetcode</em>坚持成了自己的一个习惯，疫情期间我兑换了属于自己的t恤，因为做项目的缘故，把刷<em>leetcode</em>的语言，从c++转到了python，直到今天，我都不敢相信，我将一件事情坚持了整整一年，我的刷题数能来到1100题，自己能把c++和python运用的如此熟练，自己能将这些常见的算法如此如数家珍，刻意的练习真的是有用的！感谢在疫情期间，仍然在坚持的自己，毕竟这真的是自己为数不多坚持下来的一件事情。其次，我拥有了人生中的第一台mac，我真的很开心，因为我人生中陪伴时间最多的就是我的电脑了，对我来说，他更像一个朋友。疫情期间的生活虽然很枯燥，但是自己仍然在枯燥中，培养了自己很好的习惯，积累了很多有用的知识。还有吧，就是自己完成了自己的毕业设计，令我最自豪的部分应该是致谢吧，我感谢了四年来所有帮助过我的人，在最后我还写了一首词：</p>
+<blockquote>
+<p>长安北雷，四载韶华逝，不见风发少年郎。</p>
+<p>雁塔太白，春秋又三度，唯有伏案编码忙。</p>
+<p>岁月无情，人去楼亦空，雨打浮萍散飘蓬。</p>
+<p>人生有梦，各自奔精彩，莫叹从此难相逢。</p>
+</blockquote>
+<p>疫情也给我带来很大精神上的冲击，没有了所有社交之后，难免会让人一个人独立的思考。我思考自己的过去，展望着自己的未来。我也慢慢在想，到底应该怎样去做，才能让自己的人生少一些遗憾。以前自己抓机会的能力真的很差，很多事情都不敢去争取，不敢去迈出第一步。看到别人得到又会去酸和羡慕，而且以前的我真的是个很没有自信的人，一度觉得自己有些自卑，觉得自己身上根本没有什么拿的出手的东西，做什么事情都是三分钟热度。我没日没夜，无时不刻得在剖析着自己，是时候，该改变了。</p>
+<h2 id="这一年（下）"><a href="#这一年（下）" class="headerlink" title="这一年（下）"></a>这一年（下）</h2><p>7月份，回到了阔别半年的学校，原本以为自己还能在这安心写写毕设，大家一起聚聚，然后好好说道别的。突然的疫情让这一切变成了匆匆的告别，短暂得在学校滞留一周之后，就忙碌着收拾东西，搬离居住四年之久的宿舍了(<del>在繁忙中我还大意得卖掉了自己的本科录取通知书</del>）。我至今还能回忆起我在毕业时做了什么，但是我觉得我可能不会记得很久了。我原来一直以为，我会在毕业那天有很多感触的，但是事实上它和平淡的每一天没有任何区别，也许是疫情削弱了它的魅力吧，更多的是对于自己四年没有留下什么巨大收获的悔恨。匆匆告别学校之后，不像别人去享受自己人生的最后一个暑假，我匆忙踏上了老校区的全新生活，我没有想到，在这里遇见的人和遇见的事，彻底改变了我<strong>，让我开始重新变得想要去追求，开始去相信自己，让我有了新的目标</strong>。</p>
+<p>7-8月的租房生活，让我感受到走向社会的滋味，两个月的酷暑，实验室与住的地方的来回奔波，让我切身感受到成长的痕迹。我以前是个很自闭的人，在大学本科没有参加过什么社团，什么组织，每天的上课活动也都是和舍友在一起，我从来不会去主动认识别人，去扩大自己的圈子，我也很抗拒这些，我也不会主动去了解身边发生了什么，总是活在自己的圈子里自我感动着。固定的学生思维，认为只要读书好（<del>事实上读书也读不过别人</del>），以后一定可以混的很不错。我自以为觉得自己是一个不够聪明的人，没有很高的智商，尤其是在计算机，数学这种高智商游戏里，我真的算不上反应很快，学习能力很强的，大多的时候，我都是在不断的模仿，不断的学习，不断的练习。我也曾天真的以为，只要自己练习够一定的数量，花费到一定的时间，也会达到相同的高度，后来我才知道是我错了，<strong>天才之所以被称为天才，是有原因的</strong>。并不是智商有多高，而是从小到大培养的思考问题的角度与高度，是我这个普通人通过后天再多的练习也无法达到的。但是，也不能因为知道这样的事实，而放弃努力，仿佛在我心中有一座至高的殿堂，那是我无法触及的高度，但是总有人轻而易举，当我拼劲所有才能靠近那个殿堂一点点的时候，殿堂里总会传来一句：<em>我好菜啊</em>。我不想去过多纠结，总是尽全力去做好自己，因为那座殿堂不会因为别人而丢失他的神圣。与他人之间的差距，我相信总会赶上的。</p>
+<p>2020的下半年，是我开启自己社交能力的一年。我从未发现自己身上有如此高的社交天赋，因为在之前我总是觉得社交，不就是一些不务实际的嘴上<strong>功夫</strong>，一度我曾对这种人是嗤之以鼻的，觉得这些人除了会耍点嘴皮子，还会干什么？后来当我，慢慢得去接触这些人，慢慢得也尝试去在一些import scence中展现自己，我才发现其实这并不是简单的<strong>耍耍嘴皮子</strong>，给我最大的感受就是做一个presetation，以前的我站在讲台上，面对那么多人，说话都大喘气，心跳都会不由自主的加速，演讲的效果当然也很差，别人难受，我也难受。慢慢的，我刻意的开始培养自己的这个能力，从每周一次的上海工作的汇报，到英语听说课堂，再到中特课，到组会，我抓住每一个presentation的机会，从以前的恐惧，到现在愿意去主动表达自己的想法，现在我都会：<em>要不我来讲吧</em>。其次还有与人交往的能力，我以前真的没有很多的朋友，都是限制在<strong>同学，舍友</strong>，我很少主动去认识新的朋友，直到今年暑假，我很感谢@荔枝有点甜_激发了我的社交能力，也因为她，我认识了一群很优秀的人，最重要的是，我不再胆怯，我喜欢去结交新的朋友，每一个人身上的形形色色的故事也让我学会，领悟，这个社会的复杂。可能我的内心就是一个张扬的人，我只是很晚才发现了自己的这个属性。总之是个新天地吧，我很感谢我像梦一般的2020下半年。</p>
+<p>2020下半年也可能是我真正摆脱学生思维的元年。和一群狐朋狗友（学弟）成立了西电反焦虑群（鄙人不才是群主），其实这个群真的很<strong>焦虑</strong>，学弟大都是保研清北，或者985的西电top，和我一起的舍友（也是hk phd，最近炒股每天$3100），这个群真的有很大的<strong>peer pressure</strong>，但是我们都有相同的兴趣（黑西电（：开玩笑）），群里日常讨论最多的就是，人生之路的选择问题，或者老生常谈的一些键政（<del>我真的很怕被抓走</del>），<del>有时候会偶尔ghs</del>，总之他们都是一群很有前瞻性的人，和他们交流我总会学习到很多（比如买基金），我也会分享一些我的研究生生活的趣事，<del>例如收走我</del>¥2000~~，他们也会告诉我一些新校区发生的趣事，让我感觉我还在新校区一样，其实要不是读书早，我也应该和他们一样。我慨叹，一届比一届内卷更加加速，他们真的比我本科更加优秀，这一切也在激励着我不断前进。其次我很喜欢一个朋友说的一句话：这世界上10个人有8个人在焦虑，剩下两个人出生的时候就不会焦虑。最近在看磊爷的<a href="https://tobiaslee.top/2020/11/08/inner-peace/" target="_blank" rel="noopener">博客</a>也提到的这个，强如他也会遇到自己的瓶颈。我也和他一样，每一次会写一个这样的<strong>战斗檄文</strong>来重新让自己打满鸡血。</p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>2020很快就这么过去了，我努力回忆一些他来过的痕迹。我将微博的时间调到2019，赫然写着：<strong>人应该在事物瞬息变化中，保持一个良好的心态</strong>。如今2020也要逝去，我从一个本科生变成一个硕士生，从荒芜的南校区来到了繁华的北校区，从一个自闭的人变成一个外向的人，我学会了很多新的技能，认识到很多不同的人。突然发现，去年的自己，可能是真的格局有些小了。<font color=red>也许我还是没法逃离XDU这个title，也许我仍旧不能得到真正有用的资源，也许我还是实现不了自己最终的那个target，也许我还是摆脱不了那个喜欢一个女生别人必脱单的toxic体质，也许我还是会犯一些相同的错误，但是这又何妨？</font>可能我需要的从来不是一个良好的心态，而是永远有一颗<strong>追逐</strong>的心，我也许是个贪婪的人，面对充满机会的世界我真的无法选择躺平，<strong>whatever it takes</strong>。我越来越喜欢做一些，长期投资，很晚才会收益的事。从刚迈进XDU研究生的第一天起，我就告诉自己，<strong>我不属于这里。我的Ceiling绝对不仅限于此</strong>。可能是我在吹牛逼吧，但是人生不就是吹一个很大的牛逼，然后慢慢再去实现的过程吗？</p>
+<h2 id="展望2021"><a href="#展望2021" class="headerlink" title="展望2021"></a>展望2021</h2><p>辞旧迎新，总得对未来来一些展望。2021，我将22岁了，这是一个很特殊的数字，因为在我国婚姻法里，过了这一年，我就可以结婚了。说这一点，我并不是想要表达自己想要找个女朋友的焦急（虽然也有点），更多的是反思自己，是不是真的可以立足于社会，承担起一个家庭的责任。我的父亲结婚很早，也大概是22岁吧，很早就有了我，他是一个没有父亲的人，他不得不一个人承担起整个家庭。我就在想，现在的我可以吗，我现在可以恬不知耻的啃老，理直气壮的问他要首付，如果我有女朋友的话，我还可以每个月不害臊的问他多要点生活费，毕竟，你还在读书。但是，这成不了你一辈子的借口。我人生中从来没有比现在更渴望过财富，没有其他任何东西能比真金白银给我更大的安心。特别是对于我这样一个追名逐利，贪婪的人，我的要求可能会更高。我知道现在的我只能等，只能不断积累，拥有一个换取财富的<strong>潜力</strong>，然后去兑现。在这之前，我不得不错过很多东西，赶不上“车”错过一个又一个财富密码，忍受着出生领先我一步的人在我前面的嘲讽，抢夺我一切喜爱的东西。除了这些，还背负着将这些潜力去变现的压力，我能不能变现，我能变现多少？这样无疑是很痛苦的，2021仍旧是需要蛰伏的一年。<strong>Keep calm and carry on.</strong>2021还是会遇到很多困难吧，无论是工作还是情感。希望自己仍旧能将自己一直坚持的东西继续坚持，多一些新奇的发现，找一些自己身上存在的可能，把自己的饭碗端的更稳，每一天都能有所进步，然后能有些小小的突破，希望自己能流一些喜极而泣的泪水吧。</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>时间是一个神奇的东西，当地球绕着太阳完成365天一个周期的公转，电脑右上角的时间，2020的0将从0变成1，人们争相发着2020的文案，互道新年快乐，这一年，就永永远远从你生命中流逝了。你再也回不到那个春夏秋冬，当你想要捕捉它的痕迹，只能遗憾的打开手机，将相册的时间调到2020。也许这一年，你认识了很多人，也错过很多人，有的人明年还能见到，有的人可能这辈子都不再有机会。也许这一年，你经历了很多事，有开心的，有让你痛苦的，但是它们都不会像电影一样重映一次。2020，注定是在历史长河中被铭记的一年，每个人都会有自己和2020的故事，所有的故事，可能会有交集，可能完完全全是个补集，或者若干年后，随着时间的冲淡，慢慢成为补集。但是，我相信宇宙是拥有存储机制的，那一年发生的所有，都会以时间的顺序，整齐码放在某个角落，等待着有缘人一同去寻找。</p>
+<p>这就是我和我的2020。</p>
+<p>你好，2021！</p>
+<p>最后，我12月常听的一首歌，<font color=red>看到山外山，要做人上人。鹰，不可以留恋地平线。</font></p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1487528112&auto=1&height=66"></iframe>
+
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Acmen</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://acmenwang.xyz/2020/12/31/good-bye-2020/">https://acmenwang.xyz/2020/12/31/good-bye-2020/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://acmenwang.xyz" target="_blank">Acmen</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/01/13/v2i9tfqzRPVJrgb.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/01/01/OOP/"><img class="prev-cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">OOP</div></div></a></div><div class="next-post pull-right"><a href="/2020/12/27/221%E5%91%A8%E8%B5%9B/"><img class="next-cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">221周赛</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/2020/07/29/Hello-21/" title="Hello,21"><img class="relatedPosts_cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-29</div><div class="relatedPosts_title">Hello,21</div></div></a></div><div class="relatedPosts_item"><a href="/2021/01/13/1-13有感/" title="1.13有感"><img class="relatedPosts_cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-13</div><div class="relatedPosts_title">1.13有感</div></div></a></div><div class="relatedPosts_item"><a href="/2020/09/12/Before-master-career/" title="写在开学之前"><img class="relatedPosts_cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-09-12</div><div class="relatedPosts_title">写在开学之前</div></div></a></div><div class="relatedPosts_item"><a href="/2018/08/01/Hello-19/" title="Fight as a man,19"><img class="relatedPosts_cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2018-08-01</div><div class="relatedPosts_title">Fight as a man,19</div></div></a></div><div class="relatedPosts_item"><a href="/2017/07/31/Hello-18/" title="Yeah,I'm 18"><img class="relatedPosts_cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2017-07-31</div><div class="relatedPosts_title">Yeah,I'm 18</div></div></a></div><div class="relatedPosts_item"><a href="/2019/07/10/Hello-20/" title="转眼三年"><img class="relatedPosts_cover" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2019-07-10</div><div class="relatedPosts_title">转眼三年</div></div></a></div></div></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Acmen</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button id="readmode" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" title="缩小字体"><i class="fas fa-minus"></i></button><button class="translate_chn_to_cht" id="translateLink" title="简繁转换">繁</button><button id="darkmode" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script></body></html>
